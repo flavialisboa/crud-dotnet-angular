@@ -1,0 +1,15 @@
+<div class="form-froup row">
+  <label class="col-sm-2 col-form-label">Nome do Departamento</label>
+  <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="DepartmentName"
+      placeholder="Escreva o Nome do Departamento">
+  </div>
+</div>
+
+<button (click)="addDepartment()" *ngIf="dep.DepartmentId == 0" class="btn btn-primary float-right">
+  Adicionar
+</button>
+
+<button (click)="updateDepartment()" *ngIf="dep.DepartmentId != 0" class="btn btn-primary float-right">
+  Alterar
+</button>

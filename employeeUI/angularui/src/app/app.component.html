@@ -1,0 +1,27 @@
+<div class="container">
+  <h3 class="d-flex justify-content-center main-title">Portal de Gestão de Colaboradores</h3>
+  <h5 class="d-flex justify-content-center">Este projeto foi contruído com:</h5>
+  <h6 class="d-flex justify-content-center mb-4">Angular 12, ASP.Net Core Web App e SQL Server</h6>
+
+  <nav class="navbar navbar-expand-sm bg-blue navbar-dark justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item m-2">
+        <button routerLink="department"
+          class="m-1 btn btn-light btn-outline-primary" Button>
+            Departamentos
+        </button>
+      </li>
+
+      <li class="nav-item m-2">
+        <button routerLink="employee"
+          class="m-1 btn btn-light btn-outline-primary" Button>
+            Colaboradores
+        </button>
+      </li>
+    </ul>
+
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>
+
